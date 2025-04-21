@@ -1,0 +1,3080 @@
+{
+  "active": false,
+  "connections": {
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "Concatenate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get YouTube URL": {
+      "main": [
+        [
+          {
+            "node": "YouTube Video ID",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get YouTube Video": {
+      "main": [
+        [
+          {
+            "node": "Youtube Transcript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Concatenate": {
+      "main": [
+        []
+      ]
+    },
+    "Youtube Transcript": {
+      "main": [
+        []
+      ]
+    },
+    "Notion Markdown": {
+      "main": [
+        [
+          {
+            "node": "Code1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Notion": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code1": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields2": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Get YouTube URL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Video ID": {
+      "main": [
+        [
+          {
+            "node": "Get YouTube Video2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch YouTube Page": {
+      "main": [
+        [
+          {
+            "node": "Extract Transcript URL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Transcript URL": {
+      "main": [
+        [
+          {
+            "node": "Fetch Transcript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Extract Video ID",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Get updated pages1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter1": {
+      "main": [
+        [
+          {
+            "node": "Limit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Transcript": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get YouTube Video2": {
+      "main": [
+        [
+          {
+            "node": "Fetch YouTube Page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request1": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out1": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request2": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait1": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [
+          {
+            "node": "Notion Markdown",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Wait1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Split Out1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Notion Markdown",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request3": {
+      "main": [
+        [
+          {
+            "node": "Notion Markdown2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Notion Markdown2": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get updated pages1": {
+      "main": [
+        [
+          {
+            "node": "Filter1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request5": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model2": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Basic LLM Chain": {
+      "main": [
+        [
+          {
+            "node": "Notion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "YouTube": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields3": {
+      "main": [
+        [
+          {
+            "node": "Extract Video ID1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Video ID1": {
+      "main": [
+        [
+          {
+            "node": "Fetch YouTube Page1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch YouTube Page1": {
+      "main": [
+        [
+          {
+            "node": "Extract Transcript URL1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Transcript URL1": {
+      "main": [
+        [
+          {
+            "node": "Fetch Transcript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Test workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get updated pages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Transcript1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limit": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields4": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items1": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Basic LLM Chain2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Basic LLM Chain2",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Basic LLM Chain2": {
+      "main": [
+        [
+          {
+            "node": "Notion3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Notion3": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields8": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Notion Markdown4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Notion Markdown4": {
+      "main": [
+        [
+          {
+            "node": "Code5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code5": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items4": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Code6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code6": {
+      "main": [
+        []
+      ]
+    },
+    "Basic LLM Chain1": {
+      "main": [
+        [
+          {
+            "node": "Notion2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model3": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Basic LLM Chain1",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Notion Markdown3": {
+      "main": [
+        [
+          {
+            "node": "Code2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code2": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code3": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request11",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code4": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get updated pages": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If1": {
+      "main": [
+        [
+          {
+            "node": "Split Out2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Notion Markdown1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items2": {
+      "main": [
+        [
+          {
+            "node": "Notion Markdown1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out2": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request7": {
+      "main": [
+        [
+          {
+            "node": "If1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get YouTube Video3": {
+      "main": [
+        [
+          {
+            "node": "Fetch YouTube Page2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields5": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter": {
+      "main": [
+        []
+      ]
+    },
+    "Edit Fields6": {
+      "main": [
+        [
+          {
+            "node": "Extract Video ID2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Transcript2": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Transcript URL2": {
+      "main": [
+        [
+          {
+            "node": "Fetch Transcript2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch YouTube Page2": {
+      "main": [
+        [
+          {
+            "node": "Extract Transcript URL2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Video ID2": {
+      "main": [
+        [
+          {
+            "node": "Get YouTube Video3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields7": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Notion2": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Notion Markdown1": {
+      "main": [
+        [
+          {
+            "node": "Code4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request8": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request10": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items3": {
+      "main": [
+        [
+          {
+            "node": "Notion Markdown3",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Code3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request11": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items5": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Basic LLM Chain1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request9": {
+      "main": [
+        [
+          {
+            "node": "Notion4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger1": {
+      "main": [
+        []
+      ]
+    },
+    "Notion4": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-04-20T03:02:10.969Z",
+  "id": "5bdBiEVTFnPGaEs4",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "Youtube 요약 노션 copy",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "c9bb7e30-ccf3-4c86-9fc6-3c84dc2f441b",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "71a6ec97-1121-4e17-aaa5-c6479b2a7959",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "position": [
+        -4620,
+        160
+      ],
+      "webhookId": "c9bb7e30-ccf3-4c86-9fc6-3c84dc2f441b",
+      "typeVersion": 2,
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "data",
+        "options": {}
+      },
+      "id": "c3e5c371-a5ef-4253-bd71-23c2f3030d19",
+      "name": "Split Out",
+      "type": "n8n-nodes-base.splitOut",
+      "position": [
+        -4620,
+        680
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "3ee42e4c-3cee-4934-97e7-64c96b5691ed",
+              "name": "youtubeUrl",
+              "type": "string",
+              "value": "={{ $json.body.youtubeUrl }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "af0556a4-ac02-4f35-b535-47830bbf6c77",
+      "name": "Get YouTube URL",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        -4400,
+        160
+      ],
+      "typeVersion": 3.4
+    },
+    {
+      "parameters": {
+        "jsCode": "const extractYoutubeId = (url) => {\n  // Regex pattern that matches both youtu.be and youtube.com URLs\n  const pattern = /(?:youtube\\.com\\/(?:[^\\/]+\\/.+\\/|(?:v|e(?:mbed)?)\\/|.*[?&]v=)|youtu\\.be\\/)([^\"&?\\/\\s]{11})/;\n  const match = url.match(pattern);\n  return match ? match[1] : null;\n};\n\n// Input URL from previous node\nconst youtubeUrl = items[0].json.youtubeUrl; // Adjust this based on your workflow\n\n// Process the URL and return the video ID\nreturn [{\n  json: {\n    videoId: extractYoutubeId(youtubeUrl)\n  }\n}];\n"
+      },
+      "id": "5b5a01b3-6c89-433b-8c40-894a07a28205",
+      "name": "YouTube Video ID",
+      "type": "n8n-nodes-base.code",
+      "position": [
+        -4180,
+        160
+      ],
+      "typeVersion": 2
+    },
+    {
+      "parameters": {
+        "resource": "video",
+        "operation": "get",
+        "videoId": "PpvlLfufV_0",
+        "options": {}
+      },
+      "id": "5d10f76d-4310-4a06-9ee9-dd905a6f30df",
+      "name": "Get YouTube Video",
+      "type": "n8n-nodes-base.youTube",
+      "position": [
+        -4620,
+        940
+      ],
+      "typeVersion": 1,
+      "credentials": {
+        "youTubeOAuth2Api": {
+          "id": "IzfPbc1FydRwf5Ml",
+          "name": "YouTube account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fieldsToSummarize": {
+          "values": [
+            {
+              "aggregation": "concatenate",
+              "field": "data",
+              "separateBy": " "
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "e39bcaf3-8d68-4bbd-aa21-9ff7f585015c",
+      "name": "Concatenate",
+      "type": "n8n-nodes-base.summarize",
+      "position": [
+        -4400,
+        680
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "youtubeURL": "={{ $json.id }}",
+        "language": "=ko"
+      },
+      "type": "n8n-nodes-youtube-transcript-api.youtubeTranscriptApi",
+      "typeVersion": 1,
+      "position": [
+        -4400,
+        940
+      ],
+      "id": "73e6825e-0d67-4cc2-9551-5fc92ee557d0",
+      "name": "Youtube Transcript",
+      "retryOnFail": false
+    },
+    {
+      "parameters": {
+        "inputMarkdown": "={{ $('Basic LLM Chain').first().json.text }}"
+      },
+      "type": "n8n-nodes-notion-markdown.notionMarkdown",
+      "typeVersion": 1,
+      "position": [
+        -284,
+        1200
+      ],
+      "id": "c73f5fbe-de58-4844-a463-ae8dc08d9a29",
+      "name": "Notion Markdown"
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "update",
+        "pageId": {
+          "__rl": true,
+          "value": "={{ $('Get updated pages1').item.json.url }}",
+          "mode": "url"
+        },
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "Title|title",
+              "title": "={{ $('Get YouTube Video2').item.json.snippet.title }}"
+            },
+            {
+              "key": "Image|files",
+              "fileUrls": {
+                "fileUrl": [
+                  {
+                    "name": "thumbnail",
+                    "url": "={{ $('Get YouTube Video2').item.json.snippet.thumbnails.medium.url }}"
+                  }
+                ]
+              }
+            },
+            {
+              "key": "Area/Resource|relation",
+              "relationValue": [
+                "1da15667-5346-80b0-a8b1-fb1256aa30c4"
+              ]
+            },
+            {
+              "key": "Type|select",
+              "selectValue": "Youtube"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        -1824,
+        1300
+      ],
+      "id": "5e813ebd-9ddf-4b89-b649-5677de5b4415",
+      "name": "Notion",
+      "credentials": {
+        "notionApi": {
+          "id": "n3j1Es9nW3F0S6LY",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{\n  json: {\n    children: $input.first().json.output\n  }\n}]"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -64,
+        1200
+      ],
+      "id": "8056376c-6a0c-411d-89a6-459448ac8967",
+      "name": "Code1"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5bb278f5-7a5b-4ef2-872f-1e2a4d169749",
+              "name": "notionPageId",
+              "value": "={{ $json.id }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1604,
+        1300
+      ],
+      "id": "a6e4a5f9-f76b-4d77-acdc-fc54930f58d0",
+      "name": "Edit Fields2"
+    },
+    {
+      "parameters": {
+        "jsCode": "function getVideoId(url) {\n  // Handle youtu.be format\n  if (url.includes('youtu.be/')) {\n    const id = url.split('youtu.be/')[1].split('?')[0];\n    return id;\n  }\n  \n  // Handle youtube.com format\n  if (url.includes('youtube.com/watch')) {\n    const matches = url.match(/[?&]v=([^&#]+)/);\n    return matches ? matches[1] : null;\n  }\n  \n  return null;\n}\n\nasync function processSingle(item, index) {\n  const url = item?.json?.url || item?.url;\n  const lang = item?.json?.language || 'ko'; // Default to Korean if not specified\n  \n  if (!url) {\n    return {\n      json: {\n        error: `No URL found in item ${index}`,\n        inputReceived: JSON.stringify(item)\n      }\n    };\n  }\n\n  try {\n    const videoId = getVideoId(url);\n    if (!videoId) {\n      return {\n        json: {\n          error: 'Could not extract video ID from URL',\n          url: url\n        }\n      };\n    }\n\n    return {\n      json: {\n        videoId,\n        language: lang,\n        pageUrl: `https://www.youtube.com/watch?v=${videoId}`,\n        headers: {\n          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',\n          'Accept-Language': `${lang},en-US;q=0.9`  // Prioritize the requested language\n        }\n      }\n    };\n  } catch (error) {\n    return {\n      json: {\n        error: error.message,\n        errorDetail: error.toString(),\n        url,\n        inputItem: JSON.stringify(item)\n      }\n    };\n  }\n}\n\n// Process all items\nconst results = await Promise.all(items.map(processSingle));\nreturn results;"
+      },
+      "id": "743d109a-dcae-47a5-8056-075ad604c17c",
+      "name": "Extract Video ID",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -3520,
+        1300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "={{ $('Extract Video ID').item.json.pageUrl }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "={{ $('Extract Video ID').item.json.headers['User-Agent'] }}"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "={{ $('Extract Video ID').item.json.headers['Accept-Language'] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "ded8922f-fd5f-467e-b653-b13ace607f41",
+      "name": "Fetch YouTube Page",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -3080,
+        1300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// for (const item of items) {\n//   const html = item.json.data;\n//   const targetLang = item.json.language || 'en';  // Default to English\n  \n//   // Extract the transcript data\n//   const transcriptMatch = html.match(/\"captionTracks\":\\[(.*?)\\]/);\n//   if (!transcriptMatch) {\n//     item.json = { error: 'No transcript data found' };\n//     continue;\n//   }\n\n//   // Parse the caption tracks\n//   const captionTracks = JSON.parse(`[${transcriptMatch[1]}]`);\n  \n//   // Look for the requested language\n//   const targetTrack = captionTracks.find(track => \n//     track.languageCode === targetLang || \n//     track.vssId?.includes(`.${targetLang}`)\n//   );\n\n//   if (!targetTrack) {\n//     // If target language not found, try auto-generated version\n//     const autoTrack = captionTracks.find(track => \n//       track.kind === \"asr\" && \n//       (track.languageCode === targetLang || track.vssId?.includes(`.${targetLang}`))\n//     );\n    \n//     if (!autoTrack) {\n//       item.json = { \n//         error: `No ${targetLang} transcript found (neither manual nor auto-generated)`,\n//         availableLanguages: captionTracks.map(track => ({\n//           code: track.languageCode,\n//           kind: track.kind,\n//           name: track.name?.simpleText\n//         }))\n//       };\n//       continue;\n//     }\n    \n//     item.json.transcriptUrl = autoTrack.baseUrl;\n//   } else {\n//     item.json.transcriptUrl = targetTrack.baseUrl;\n//   }\n// }\n\n// return items;\n\nfor (const item of items) {\n  const html = item.json.data;\n  const targetLang = item.json.language || 'en'; // Default to English\n\n  // Extract the transcript data\n  const transcriptMatch = html.match(/\"captionTracks\":\\[(.*?)\\]/);\n  if (!transcriptMatch) {\n    item.json = { error: 'No transcript data found' };\n    continue;\n  }\n\n  // Parse the caption tracks\n  const captionTracks = JSON.parse(`[${transcriptMatch[1]}]`);\n\n  // Function to find a transcript by language\n  const findTranscriptByLanguage = (lang) => {\n    return captionTracks.find(track => \n      track.languageCode === lang || \n      track.vssId?.includes(`.${lang}`)\n    );\n  };\n\n  // Attempt to find the target language transcript\n  let transcript = findTranscriptByLanguage(targetLang);\n\n  // If not found, try auto-generated version\n  if (!transcript) {\n    transcript = captionTracks.find(track => \n      track.kind === \"asr\" && \n      (track.languageCode === targetLang || track.vssId?.includes(`.${targetLang}`))\n    );\n  }\n\n  // If still not found, iterate through all available languages\n  if (!transcript) {\n    for (const track of captionTracks) {\n      transcript = findTranscriptByLanguage(track.languageCode);\n      if (transcript) break;\n    }\n  }\n\n  // Handle the result\n  if (transcript) {\n    item.json.transcriptUrl = transcript.baseUrl;\n    item.json.languageUsed = transcript.languageCode;\n  } else {\n    item.json = { \n      error: `No transcript found for ${targetLang} or other available languages.`,\n      availableLanguages: captionTracks.map(track => ({\n        code: track.languageCode,\n        kind: track.kind,\n        name: track.name?.simpleText\n      }))\n    };\n  }\n}\n\nreturn items;\n"
+      },
+      "id": "6d3f1153-0025-4e5f-82bf-62aebbeafec7",
+      "name": "Extract Transcript URL",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -2860,
+        1300
+      ],
+      "retryOnFail": false,
+      "maxTries": 2
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.transcriptUrl }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "={{ $('Extract Video ID').item.json.headers[\"User-Agent\"] }}"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "={{ $('Extract Video ID').item.json.headers[\"Accept-Language\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "f7da78ca-d057-41b7-a345-cc78c26eba5c",
+      "name": "Fetch Transcript",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -2640,
+        1300
+      ],
+      "retryOnFail": false
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "949067b8-211f-4865-a7eb-88ddf2b4529a",
+              "name": "url",
+              "value": "={{ $json.property_url }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -3740,
+        1300
+      ],
+      "id": "2e854b6c-5e03-4e39-a6f4-aca015a5976a",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 1
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -4620,
+        1300
+      ],
+      "id": "29020c8a-4a9c-4541-926e-229d9343ae63",
+      "name": "Schedule Trigger",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "859db21a-cf0f-4a18-8d9b-6aeb89c0bbae",
+              "leftValue": "={{ $json.property_updated }}",
+              "rightValue": "={{ $json.property_created }}",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [
+        -4180,
+        1300
+      ],
+      "id": "c9d7e5fc-7040-4602-b7f3-81465d59915c",
+      "name": "Filter1"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "590168b5-1369-4476-abbb-52c56713dfa2",
+              "name": "data",
+              "value": "={{$json[\"data\"].removeTags().replace(/\\s+/g, ' ').trim()}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2420,
+        1300
+      ],
+      "id": "d91369bd-b1ee-48d0-8871-e72c3983b4cb",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "databaseId": {
+          "__rl": true,
+          "value": "1d415667-5346-8175-93c7-df2cf776481c",
+          "mode": "list",
+          "cachedResultName": "All Notes [UBCC]",
+          "cachedResultUrl": "https://www.notion.so/1d4156675346817593c7df2cf776481c"
+        },
+        "title": "={{ $('Youtube Transcript').item.json.snippet.title }}",
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "URL|url",
+              "ignoreIfEmpty": true,
+              "urlValue": "=https://youtu.be/{{ $('Youtube Transcript').item.json.videoId }}"
+            },
+            {
+              "key": "Title|title",
+              "title": "={{ $('Youtube Transcript').item.json.snippet.localized.title }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        -4620,
+        420
+      ],
+      "id": "2f3bf65a-ef54-49c0-9b70-cb001c42f867",
+      "name": "Notion1",
+      "credentials": {
+        "notionApi": {
+          "id": "n3j1Es9nW3F0S6LY",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "video",
+        "operation": "get",
+        "videoId": "={{ $json.videoId }}",
+        "options": {}
+      },
+      "id": "eeac767a-a607-4aa9-8306-07d8bebc4c1c",
+      "name": "Get YouTube Video2",
+      "type": "n8n-nodes-base.youTube",
+      "position": [
+        -3300,
+        1300
+      ],
+      "typeVersion": 1,
+      "credentials": {
+        "youTubeOAuth2Api": {
+          "id": "IzfPbc1FydRwf5Ml",
+          "name": "YouTube account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "=https://api.notion.com/v1/blocks/{{ $('Edit Fields2').item.json.notionPageId }}/children",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer ntn_X5744579398BM6yw1C5X70UcG9SjSDQCnSyG9FmPEsq5n1"
+            },
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1164,
+        1300
+      ],
+      "id": "03ae357a-52eb-4492-895f-3ede847e874a",
+      "name": "HTTP Request1",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "V0hqFbxf1fb6XMu0",
+          "name": "Notoin Bearer Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "results",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -724,
+        1400
+      ],
+      "id": "6475ed3c-3564-494d-b0b2-c3e882ff9031",
+      "name": "Split Out1"
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "=https://api.notion.com/v1/blocks/{{ $json.id }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer ntn_X5744579398BM6yw1C5X70UcG9SjSDQCnSyG9FmPEsq5n1"
+            },
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"archived\": true\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -64,
+        1500
+      ],
+      "id": "f0e167ae-3dcd-4466-ae11-98ab212fc949",
+      "name": "HTTP Request2",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "V0hqFbxf1fb6XMu0",
+          "name": "Notoin Bearer Auth account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "amount": 0.5
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        -284,
+        1400
+      ],
+      "id": "1cc848c1-a978-40db-a81b-855c6ea0b278",
+      "name": "Wait1",
+      "webhookId": "71cc854c-14f2-4caa-a139-3a8f75615e40"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -504,
+        1400
+      ],
+      "id": "fe27bcb2-57fc-4e9b-91be-2968d74582fe",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "ff2d43c3-5d2f-4a04-93fc-caf762436b6e",
+              "leftValue": "={{ $json.results }}",
+              "rightValue": "",
+              "operator": {
+                "type": "array",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -944,
+        1300
+      ],
+      "id": "98dc2c3d-0c81-46f0-a64d-c38981881a63",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "=https://api.notion.com/v1/blocks/{{ $('Edit Fields2').first().json.notionPageId }}/children",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer ntn_X5744579398BM6yw1C5X70UcG9SjSDQCnSyG9FmPEsq5n1"
+            },
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $('Code1').item.json }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        156,
+        1200
+      ],
+      "id": "dec339f5-9650-4f9d-a269-cc524cb12f1c",
+      "name": "HTTP Request3",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "V0hqFbxf1fb6XMu0",
+          "name": "Notoin Bearer Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "getAll",
+        "databaseId": {
+          "__rl": true,
+          "value": "1d415667-5346-8175-93c7-df2cf776481c",
+          "mode": "list",
+          "cachedResultName": "All Notes [UBCC]",
+          "cachedResultUrl": "https://www.notion.so/1d4156675346817593c7df2cf776481c"
+        },
+        "returnAll": true,
+        "filterType": "manual",
+        "matchType": "allFilters",
+        "filters": {
+          "conditions": [
+            {
+              "key": "URL|url",
+              "condition": "contains",
+              "urlValue": "youtu"
+            },
+            {
+              "key": "Updated|last_edited_time",
+              "condition": "equals",
+              "lastEditedTime": "={{ $now.minus(5, 'minutes').toISO()}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "c945f7c0-c779-437c-85d9-fe6b92bff94a",
+      "name": "Get updated pages1",
+      "type": "n8n-nodes-base.notion",
+      "position": [
+        -4400,
+        1300
+      ],
+      "typeVersion": 2.2,
+      "credentials": {
+        "notionApi": {
+          "id": "n3j1Es9nW3F0S6LY",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "=https://api.notion.com/v1/blocks/{{ $('Edit Fields2').first().json.notionPageId }}/children",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer ntn_X5744579398BM6yw1C5X70UcG9SjSDQCnSyG9FmPEsq5n1"
+            },
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $json }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        816,
+        1200
+      ],
+      "id": "1eaf5e9e-5950-43b0-a08c-fe6cc172daad",
+      "name": "HTTP Request4",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "V0hqFbxf1fb6XMu0",
+          "name": "Notoin Bearer Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{\n  json: {\n    children: [\n      {\n        \"object\": \"block\",\n        \"type\": \"heading_3\",\n        \"heading_3\": {\n          \"rich_text\": [\n            {\n              \"type\": \"text\",\n              \"text\": {\n                \"content\": \"대본\"\n              }\n            }\n          ]\n        }\n      },\n      ...$input.first().json.output\n    ]\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        596,
+        1200
+      ],
+      "id": "41cbc9b2-7c40-43f5-8898-c1000adcfd7d",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "inputMarkdown": "={{ $('Edit Fields1').first().json.data }}"
+      },
+      "type": "n8n-nodes-notion-markdown.notionMarkdown",
+      "typeVersion": 1,
+      "position": [
+        376,
+        1200
+      ],
+      "id": "aca4a272-aeb5-4758-b3a6-b8910a1f9bc4",
+      "name": "Notion Markdown2"
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "=https://api.notion.com/v1/pages/{{ $('Edit Fields2').item.json.notionPageId }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer ntn_X5744579398BM6yw1C5X70UcG9SjSDQCnSyG9FmPEsq5n1"
+            },
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"cover\": {\n    \"type\": \"external\",\n    \"external\": {\n      \"url\": \"{{ $('Notion').item.json.property_image[0] }}\"\n    }\n  }\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1384,
+        1300
+      ],
+      "id": "76e465e6-a46f-47de-a984-9fadf1cda7fc",
+      "name": "HTTP Request5",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "V0hqFbxf1fb6XMu0",
+          "name": "Notoin Bearer Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.data }}",
+        "messages": {
+          "messageValues": [
+            {
+              "type": "AIMessagePromptTemplate",
+              "message": "`# 📑 유튜브 대본을 계층적·시각적 Markdown 요약으로 변환하는 프롬프트  ## 🟢 목적 유튜브 영상 대본을 **명확하고 구조적인 요약**으로 재구성합니다.   아래의 스타일 가이드와 작성 규칙을 반드시 준수하세요.  ---  ## 📋 프롬프트 지시사항  다음 텍스트를 아래의 Markdown 구조로 요약하세요.  ### 1. 구조 및 포맷 - **최상위 제목**: `#` + 영상 핵심 주제 (이모지 포함) - **주요 섹션**: `##` + 이모지 + 핵심 키워드 - **하위 항목**: `###` + 번호. 키워드 - **세부 내용**: 불릿포인트(–)로 정리, 필요시 소주제 추가 - **최소 3단계 이상 계층화**   - **중요 용어는 굵게, 수치/연도/핵심 결과는 _기울임_ 처리**  ### 2. 시각적 요소 - 각 섹션/항목에 어울리는 이모지 활용 - 복잡한 관계나 흐름은 mermaid, ASCII 등으로 시각화(필요시) - 표, 순서도, 타임라인 등 Markdown 지원 요소 적극 사용  ### 3. 서술 스타일 - 객관적·설명체, 학술적 톤 - 불필요한 감상/의견/광고성 문구 배제 - 핵심 정보 위주로 간결하게 정리 - 동사는 \"~하였다\" 등 과거형 사용  ### 4. 예시`  # 💡 테슬라의 성장과 도전  ## 1. 🚗 테슬라의 창립과 비전  - **일론 머스크**가 *2003년* 테슬라 설립에 참여하였다. - 전기차 대중화를 목표로 하였다.  ## 1.1. 초기 투자와 기술 개발  - *2008년* 첫 모델 **로드스터** 출시. - 배터리 기술 혁신을 이끌었다.  ## 2. 📈 시장 확장과 생산 전략  - 기가팩토리 설립으로 생산량을 *3배* 늘렸다. - **모델 3** 출시로 대중 시장 진입에 성공하였다.  `texttimeline     2003 : 창립     2008 : 로드스터 출시     2017 : 모델 3 출시`  `text ### 5. 추가 규칙 - 각 섹션별로 이모지와 키워드를 조합해 제목 작성 - 영상의 흐름과 논리 구조를 최대한 반영 - 필요시 표, 리스트, 코드블록 등 마크다운 기능 적극 활용  ---  ## 🟦 활용 예시  ### 입력 예시 \"테슬라는 2003년 설립되어 전기차 혁신을 주도했다. 2008년 첫 전기차를 출시했다. 이후 생산량을 늘리고, 다양한 모델을 선보였다.\"  ### 출력 예시`  # ⚡ 테슬라의 전기차 혁신  ## 1. 🚀 창립과 첫 모델  - **테슬라**는 *2003년* 설립되었다. - *2008년* 첫 전기차 출시.  ## 2. 🏭 생산 및 모델 확장  - 생산량을 크게 늘렸다. - 다양한 **전기차 모델**을 출시하였다.  `text ---  ## 🟨 주의사항 - 영상 대본의 모든 주요 내용을 빠짐없이 구조적으로 포함 - 이모지, 계층 구조, 시각화 요소 등은 반드시 포함 - 광고, 불필요한 감상, 사족은 배제  - 긴 대본은 길게 각 챕터별로 정리 ---`"
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.6,
+      "position": [
+        -2200,
+        1300
+      ],
+      "id": "c2711961-56b6-44e5-9b0d-920ddf133d7c",
+      "name": "Basic LLM Chain"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-1.5-flash-002",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -2112,
+        1520
+      ],
+      "id": "4311ebf2-fe26-4a2d-9e76-19e4c928bbda",
+      "name": "Google Gemini Chat Model2",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "JRs5loKkRrAvgzzd",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "playlistItem",
+        "operation": "getAll",
+        "playlistId": "=PLH6euVBKPfO-WsZIE96T8vVKuEdVi9IGc",
+        "limit": 3,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.youTube",
+      "typeVersion": 1,
+      "position": [
+        -4620,
+        1860
+      ],
+      "id": "e6856f14-d48d-40bf-900a-356cfa295b75",
+      "name": "YouTube",
+      "credentials": {
+        "youTubeOAuth2Api": {
+          "id": "IzfPbc1FydRwf5Ml",
+          "name": "YouTube account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "949067b8-211f-4865-a7eb-88ddf2b4529a",
+              "name": "url",
+              "value": "=https://youtu.be/{{ $json.snippet.resourceId.videoId }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -4400,
+        1860
+      ],
+      "id": "e2943bd6-a65d-4db5-976b-2c2be90925d7",
+      "name": "Edit Fields3"
+    },
+    {
+      "parameters": {
+        "url": "={{ $('Extract Video ID1').item.json.pageUrl }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "={{ $('Extract Video ID1').item.json.headers['User-Agent'] }}"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "={{ $('Extract Video ID1').item.json.headers['Accept-Language'] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "9ca84528-1dc3-400a-af07-c5cad7135c16",
+      "name": "Fetch YouTube Page1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -3960,
+        1860
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "function getVideoId(url) {\n  // Handle youtu.be format\n  if (url.includes('youtu.be/')) {\n    const id = url.split('youtu.be/')[1].split('?')[0];\n    return id;\n  }\n  \n  // Handle youtube.com format\n  if (url.includes('youtube.com/watch')) {\n    const matches = url.match(/[?&]v=([^&#]+)/);\n    return matches ? matches[1] : null;\n  }\n  \n  return null;\n}\n\nasync function processSingle(item, index) {\n  const url = item?.json?.url || item?.url;\n  const lang = item?.json?.language || 'ko'; // Default to Korean if not specified\n  \n  if (!url) {\n    return {\n      json: {\n        error: `No URL found in item ${index}`,\n        inputReceived: JSON.stringify(item)\n      }\n    };\n  }\n\n  try {\n    const videoId = getVideoId(url);\n    if (!videoId) {\n      return {\n        json: {\n          error: 'Could not extract video ID from URL',\n          url: url\n        }\n      };\n    }\n\n    return {\n      json: {\n        videoId,\n        language: lang,\n        pageUrl: `https://www.youtube.com/watch?v=${videoId}`,\n        headers: {\n          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',\n          'Accept-Language': `${lang},en-US;q=0.9`  // Prioritize the requested language\n        }\n      }\n    };\n  } catch (error) {\n    return {\n      json: {\n        error: error.message,\n        errorDetail: error.toString(),\n        url,\n        inputItem: JSON.stringify(item)\n      }\n    };\n  }\n}\n\n// Process all items\nconst results = await Promise.all(items.map(processSingle));\nreturn results;"
+      },
+      "id": "75cc8cbb-374c-446a-8bbf-4808b9559e11",
+      "name": "Extract Video ID1",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -4180,
+        1860
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// for (const item of items) {\n//   const html = item.json.data;\n//   const targetLang = item.json.language || 'en';  // Default to English\n  \n//   // Extract the transcript data\n//   const transcriptMatch = html.match(/\"captionTracks\":\\[(.*?)\\]/);\n//   if (!transcriptMatch) {\n//     item.json = { error: 'No transcript data found' };\n//     continue;\n//   }\n\n//   // Parse the caption tracks\n//   const captionTracks = JSON.parse(`[${transcriptMatch[1]}]`);\n  \n//   // Look for the requested language\n//   const targetTrack = captionTracks.find(track => \n//     track.languageCode === targetLang || \n//     track.vssId?.includes(`.${targetLang}`)\n//   );\n\n//   if (!targetTrack) {\n//     // If target language not found, try auto-generated version\n//     const autoTrack = captionTracks.find(track => \n//       track.kind === \"asr\" && \n//       (track.languageCode === targetLang || track.vssId?.includes(`.${targetLang}`))\n//     );\n    \n//     if (!autoTrack) {\n//       item.json = { \n//         error: `No ${targetLang} transcript found (neither manual nor auto-generated)`,\n//         availableLanguages: captionTracks.map(track => ({\n//           code: track.languageCode,\n//           kind: track.kind,\n//           name: track.name?.simpleText\n//         }))\n//       };\n//       continue;\n//     }\n    \n//     item.json.transcriptUrl = autoTrack.baseUrl;\n//   } else {\n//     item.json.transcriptUrl = targetTrack.baseUrl;\n//   }\n// }\n\n// return items;\n\nfor (const item of items) {\n  const html = item.json.data;\n  const targetLang = item.json.language || 'en'; // Default to English\n\n  // Extract the transcript data\n  const transcriptMatch = html.match(/\"captionTracks\":\\[(.*?)\\]/);\n  if (!transcriptMatch) {\n    item.json = { error: 'No transcript data found' };\n    continue;\n  }\n\n  // Parse the caption tracks\n  const captionTracks = JSON.parse(`[${transcriptMatch[1]}]`);\n\n  // Function to find a transcript by language\n  const findTranscriptByLanguage = (lang) => {\n    return captionTracks.find(track => \n      track.languageCode === lang || \n      track.vssId?.includes(`.${lang}`)\n    );\n  };\n\n  // Attempt to find the target language transcript\n  let transcript = findTranscriptByLanguage(targetLang);\n\n  // If not found, try auto-generated version\n  if (!transcript) {\n    transcript = captionTracks.find(track => \n      track.kind === \"asr\" && \n      (track.languageCode === targetLang || track.vssId?.includes(`.${targetLang}`))\n    );\n  }\n\n  // If still not found, iterate through all available languages\n  if (!transcript) {\n    for (const track of captionTracks) {\n      transcript = findTranscriptByLanguage(track.languageCode);\n      if (transcript) break;\n    }\n  }\n\n  // Handle the result\n  if (transcript) {\n    item.json.transcriptUrl = transcript.baseUrl;\n    item.json.languageUsed = transcript.languageCode;\n  } else {\n    item.json = { \n      error: `No transcript found for ${targetLang} or other available languages.`,\n      availableLanguages: captionTracks.map(track => ({\n        code: track.languageCode,\n        kind: track.kind,\n        name: track.name?.simpleText\n      }))\n    };\n  }\n}\n\nreturn items;\n"
+      },
+      "id": "607f8fa7-4803-41a5-af79-2aaa46dc3016",
+      "name": "Extract Transcript URL1",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -3740,
+        1860
+      ],
+      "retryOnFail": false,
+      "maxTries": 2
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.transcriptUrl }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "={{ $('Extract Video ID1').item.json.headers[\"User-Agent\"] }}"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "={{ $('Extract Video ID1').item.json.headers[\"Accept-Language\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "ce8f44ee-8e94-4dc1-88fe-da6b555f2252",
+      "name": "Fetch Transcript1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -3520,
+        1860
+      ],
+      "retryOnFail": false
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -4620,
+        3710
+      ],
+      "id": "0cc42bcb-40cd-4e2e-aed8-137dd29e2431",
+      "name": "When clicking ‘Test workflow’"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "590168b5-1369-4476-abbb-52c56713dfa2",
+              "name": "data",
+              "value": "={{$json[\"data\"].removeTags().replace(/\\s+/g, ' ').trim()}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -3300,
+        1860
+      ],
+      "id": "6ef30070-c248-4e25-b23a-dd958e3df5e3",
+      "name": "Edit Fields4"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        -3960,
+        1300
+      ],
+      "id": "cd263a12-542f-448b-b347-ef295829b621",
+      "name": "Limit"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -3080,
+        1860
+      ],
+      "id": "e6bff2be-07e5-441c-8caf-232f3d9e9cb1",
+      "name": "Loop Over Items1"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.data }}",
+        "messages": {
+          "messageValues": [
+            {
+              "type": "AIMessagePromptTemplate",
+              "message": "`# 📑 유튜브 대본을 계층적·시각적 Markdown 요약으로 변환하는 프롬프트  ## 🟢 목적 유튜브 영상 대본을 **명확하고 구조적인 요약**으로 재구성합니다.   아래의 스타일 가이드와 작성 규칙을 반드시 준수하세요.  ---  ## 📋 프롬프트 지시사항  다음 텍스트를 아래의 Markdown 구조로 요약하세요.  ### 1. 구조 및 포맷 - **최상위 제목**: `#` + 영상 핵심 주제 (이모지 포함) - **주요 섹션**: `##` + 이모지 + 핵심 키워드 - **하위 항목**: `###` + 번호. 키워드 - **세부 내용**: 불릿포인트(–)로 정리, 필요시 소주제 추가 - **최소 3단계 이상 계층화**   - **중요 용어는 굵게, 수치/연도/핵심 결과는 _기울임_ 처리**  ### 2. 시각적 요소 - 각 섹션/항목에 어울리는 이모지 활용 - 복잡한 관계나 흐름은 mermaid, ASCII 등으로 시각화(필요시) - 표, 순서도, 타임라인 등 Markdown 지원 요소 적극 사용  ### 3. 서술 스타일 - 객관적·설명체, 학술적 톤 - 불필요한 감상/의견/광고성 문구 배제 - 핵심 정보 위주로 간결하게 정리 - 동사는 \"~하였다\" 등 과거형 사용  ### 4. 예시`  # 💡 테슬라의 성장과 도전  ## 1. 🚗 테슬라의 창립과 비전  - **일론 머스크**가 *2003년* 테슬라 설립에 참여하였다. - 전기차 대중화를 목표로 하였다.  ## 1.1. 초기 투자와 기술 개발  - *2008년* 첫 모델 **로드스터** 출시. - 배터리 기술 혁신을 이끌었다.  ## 2. 📈 시장 확장과 생산 전략  - 기가팩토리 설립으로 생산량을 *3배* 늘렸다. - **모델 3** 출시로 대중 시장 진입에 성공하였다.  `texttimeline     2003 : 창립     2008 : 로드스터 출시     2017 : 모델 3 출시`  `text ### 5. 추가 규칙 - 각 섹션별로 이모지와 키워드를 조합해 제목 작성 - 영상의 흐름과 논리 구조를 최대한 반영 - 필요시 표, 리스트, 코드블록 등 마크다운 기능 적극 활용  ---  ## 🟦 활용 예시  ### 입력 예시 \"테슬라는 2003년 설립되어 전기차 혁신을 주도했다. 2008년 첫 전기차를 출시했다. 이후 생산량을 늘리고, 다양한 모델을 선보였다.\"  ### 출력 예시`  # ⚡ 테슬라의 전기차 혁신  ## 1. 🚀 창립과 첫 모델  - **테슬라**는 *2003년* 설립되었다. - *2008년* 첫 전기차 출시.  ## 2. 🏭 생산 및 모델 확장  - 생산량을 크게 늘렸다. - 다양한 **전기차 모델**을 출시하였다.  `text ---  ## 🟨 주의사항 - 영상 대본의 모든 주요 내용을 빠짐없이 구조적으로 포함 - 이모지, 계층 구조, 시각화 요소 등은 반드시 포함 - 광고, 불필요한 감상, 사족은 배제  ---`"
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.6,
+      "position": [
+        -2860,
+        1860
+      ],
+      "id": "7fa7d18d-43e4-43c0-83c4-979d9fdcfff5",
+      "name": "Basic LLM Chain2"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-1.5-flash-002",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -2772,
+        2080
+      ],
+      "id": "a7fc8189-d12a-457e-8531-4c6f83d3e3c7",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "JRs5loKkRrAvgzzd",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "databaseId": {
+          "__rl": true,
+          "value": "1d415667-5346-8175-93c7-df2cf776481c",
+          "mode": "list",
+          "cachedResultName": "All Notes [UBCC]",
+          "cachedResultUrl": "https://www.notion.so/1d4156675346817593c7df2cf776481c"
+        },
+        "title": "={{ $('YouTube').item.json.snippet.title }}",
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "Area/Resource|relation",
+              "relationValue": [
+                "1da15667-5346-80b0-a8b1-fb1256aa30c4"
+              ]
+            },
+            {
+              "key": "Image|files",
+              "fileUrls": {
+                "fileUrl": [
+                  {
+                    "name": "thumbnail",
+                    "url": "={{ $('YouTube').item.json.snippet.thumbnails.medium.url }}"
+                  }
+                ]
+              }
+            },
+            {
+              "key": "Type|select",
+              "selectValue": "Youtube"
+            },
+            {
+              "key": "URL|url",
+              "urlValue": "={{ $('Extract Video ID1').item.json.pageUrl }}"
+            },
+            {
+              "key": "Title|title",
+              "title": "={{ $('YouTube').item.json.snippet.title }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        -2484,
+        1860
+      ],
+      "id": "48d6c2d8-868f-4312-a66c-c8d8e5459673",
+      "name": "Notion3",
+      "credentials": {
+        "notionApi": {
+          "id": "n3j1Es9nW3F0S6LY",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5bb278f5-7a5b-4ef2-872f-1e2a4d169749",
+              "name": "notionPageId",
+              "value": "={{ $json.id }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2264,
+        1860
+      ],
+      "id": "32f02303-b3c2-4d20-b4ce-7a44d3b79653",
+      "name": "Edit Fields8"
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "=https://api.notion.com/v1/pages/{{ $('Edit Fields8').item.json.notionPageId }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer ntn_X5744579398BM6yw1C5X70UcG9SjSDQCnSyG9FmPEsq5n1"
+            },
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"cover\": {\n    \"type\": \"external\",\n    \"external\": {\n      \"url\": \"{{ $('Notion3').item.json.property_image[0] }}\"\n    }\n  }\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -2044,
+        1860
+      ],
+      "id": "7f755fef-565c-4294-87ba-115ed92f8414",
+      "name": "HTTP Request",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "V0hqFbxf1fb6XMu0",
+          "name": "Notoin Bearer Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "inputMarkdown": "={{ $('Basic LLM Chain2').first().json.text }}"
+      },
+      "type": "n8n-nodes-notion-markdown.notionMarkdown",
+      "typeVersion": 1,
+      "position": [
+        -1824,
+        1860
+      ],
+      "id": "4bc54bd6-9d30-4280-8c72-4ab9b1d0a8ca",
+      "name": "Notion Markdown4"
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// 실제 코드 시작\nconst childrenArray =  $input.first().json.output// 입력 데이터에서 children 배열 추출\nconst batchSize = 50;\nconst result = [];\n\n// 50개 단위로 분할\nfor (let i = 0; i < childrenArray.length; i += batchSize) {\n  const batch = childrenArray.slice(i, i + batchSize);\n  \n  result.push({\n    json: {\n      children: batch.map(child => ({\n        object: \"block\",\n        type: child.type,\n        [child.type]: child[child.type] // 동적 키 할당\n      }))\n    }\n  });\n}\n\nreturn result;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1604,
+        1860
+      ],
+      "id": "a346c952-3811-4f9f-a359-413877c0416d",
+      "name": "Code5"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -1384,
+        1860
+      ],
+      "id": "011ca924-7d4a-468d-9243-6365b31df8c9",
+      "name": "Loop Over Items4"
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{\n  json: {\n    children: $input.first().json.children\n  }\n}]"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1164,
+        1860
+      ],
+      "id": "730a24d7-7e48-4739-85d1-e64f858f3454",
+      "name": "Code6"
+    },
+    {
+      "parameters": {
+        "inputMarkdown": "={{ $('Edit Fields5').first().json.data }}"
+      },
+      "type": "n8n-nodes-notion-markdown.notionMarkdown",
+      "typeVersion": 1,
+      "position": [
+        -4620,
+        2220
+      ],
+      "id": "df350ad2-01e3-4582-9013-f253b809a1af",
+      "name": "Notion Markdown5"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.data }}",
+        "messages": {
+          "messageValues": [
+            {
+              "type": "AIMessagePromptTemplate",
+              "message": "`# 📑 유튜브 대본을 계층적·시각적 Markdown 요약으로 변환하는 프롬프트  ## 🟢 목적 유튜브 영상 대본을 **명확하고 구조적인 요약**으로 재구성합니다.   아래의 스타일 가이드와 작성 규칙을 반드시 준수하세요.  ---  ## 📋 프롬프트 지시사항  다음 텍스트를 아래의 Markdown 구조로 요약하세요.  ### 1. 구조 및 포맷 - **최상위 제목**: `#` + 영상 핵심 주제 (이모지 포함) - **주요 섹션**: `##` + 이모지 + 핵심 키워드 - **하위 항목**: `###` + 번호. 키워드 - **세부 내용**: 불릿포인트(–)로 정리, 필요시 소주제 추가 - **최소 3단계 이상 계층화**   - **중요 용어는 굵게, 수치/연도/핵심 결과는 _기울임_ 처리**  ### 2. 시각적 요소 - 각 섹션/항목에 어울리는 이모지 활용 - 복잡한 관계나 흐름은 mermaid, ASCII 등으로 시각화(필요시) - 표, 순서도, 타임라인 등 Markdown 지원 요소 적극 사용  ### 3. 서술 스타일 - 객관적·설명체, 학술적 톤 - 불필요한 감상/의견/광고성 문구 배제 - 핵심 정보 위주로 간결하게 정리 - 동사는 \"~하였다\" 등 과거형 사용  ### 4. 예시`  # 💡 테슬라의 성장과 도전  ## 1. 🚗 테슬라의 창립과 비전  - **일론 머스크**가 *2003년* 테슬라 설립에 참여하였다. - 전기차 대중화를 목표로 하였다.  ## 1.1. 초기 투자와 기술 개발  - *2008년* 첫 모델 **로드스터** 출시. - 배터리 기술 혁신을 이끌었다.  ## 2. 📈 시장 확장과 생산 전략  - 기가팩토리 설립으로 생산량을 *3배* 늘렸다. - **모델 3** 출시로 대중 시장 진입에 성공하였다.  `texttimeline     2003 : 창립     2008 : 로드스터 출시     2017 : 모델 3 출시`  `text ### 5. 추가 규칙 - 각 섹션별로 이모지와 키워드를 조합해 제목 작성 - 영상의 흐름과 논리 구조를 최대한 반영 - 필요시 표, 리스트, 코드블록 등 마크다운 기능 적극 활용  ---  ## 🟦 활용 예시  ### 입력 예시 \"테슬라는 2003년 설립되어 전기차 혁신을 주도했다. 2008년 첫 전기차를 출시했다. 이후 생산량을 늘리고, 다양한 모델을 선보였다.\"  ### 출력 예시`  # ⚡ 테슬라의 전기차 혁신  ## 1. 🚀 창립과 첫 모델  - **테슬라**는 *2003년* 설립되었다. - *2008년* 첫 전기차 출시.  ## 2. 🏭 생산 및 모델 확장  - 생산량을 크게 늘렸다. - 다양한 **전기차 모델**을 출시하였다.  `text ---  ## 🟨 주의사항 - 영상 대본의 모든 주요 내용을 빠짐없이 구조적으로 포함 - 이모지, 계층 구조, 시각화 요소 등은 반드시 포함 - 광고, 불필요한 감상, 사족은 배제  ---`"
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.6,
+      "position": [
+        -2420,
+        3560
+      ],
+      "id": "93b1a55f-5967-4c21-aad7-a0b1f3e52bf8",
+      "name": "Basic LLM Chain1"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.0-flash-001",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -2332,
+        3780
+      ],
+      "id": "dd2810ce-e3c6-4349-9680-ae5b7cf92ed7",
+      "name": "Google Gemini Chat Model3",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "JRs5loKkRrAvgzzd",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "inputMarkdown": "={{ $('Edit Fields5').first().json.data }}"
+      },
+      "type": "n8n-nodes-notion-markdown.notionMarkdown",
+      "typeVersion": 1,
+      "position": [
+        156,
+        3260
+      ],
+      "id": "e8363a92-8866-40c5-81a5-bbaf2ea41bfb",
+      "name": "Notion Markdown3"
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{\n  json: {\n    children: [\n      {\n        \"object\": \"block\",\n        \"type\": \"heading_3\",\n        \"heading_3\": {\n          \"rich_text\": [\n            {\n              \"type\": \"text\",\n              \"text\": {\n                \"content\": \"대본\"\n              }\n            }\n          ]\n        }\n      },\n      ...$input.first().json.output\n    ]\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        376,
+        3260
+      ],
+      "id": "936e58f9-9a57-4c20-a77d-22f655677e09",
+      "name": "Code2"
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{\n  json: {\n    children: $input.last().json.children\n  }\n}]"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        156,
+        3460
+      ],
+      "id": "f0617870-3bf6-4258-a166-bd0c85be352e",
+      "name": "Code3"
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// 실제 코드 시작\nconst childrenArray =  $input.first().json.output// 입력 데이터에서 children 배열 추출\nconst batchSize = 50;\nconst result = [];\n\n// 50개 단위로 분할\nfor (let i = 0; i < childrenArray.length; i += batchSize) {\n  const batch = childrenArray.slice(i, i + batchSize);\n  \n  result.push({\n    json: {\n      children: batch.map(child => ({\n        object: \"block\",\n        type: child.type,\n        [child.type]: child[child.type] // 동적 키 할당\n      }))\n    }\n  });\n}\n\nreturn result;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -284,
+        3360
+      ],
+      "id": "87e4bea9-6ba9-43e6-8862-12eab8dbbf1e",
+      "name": "Code4"
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "getAll",
+        "databaseId": {
+          "__rl": true,
+          "value": "1d415667-5346-8175-93c7-df2cf776481c",
+          "mode": "list",
+          "cachedResultName": "All Notes [UBCC]",
+          "cachedResultUrl": "https://www.notion.so/1d4156675346817593c7df2cf776481c"
+        },
+        "returnAll": true,
+        "filterType": "manual",
+        "matchType": "allFilters",
+        "filters": {
+          "conditions": [
+            {
+              "key": "URL|url",
+              "condition": "contains",
+              "urlValue": "youtu"
+            },
+            {
+              "key": "Updated|last_edited_time",
+              "condition": "after",
+              "lastEditedTime": "={{ $now.minus(1, 'days').toISO()}}"
+            },
+            {
+              "key": "Updated|last_edited_time",
+              "condition": "before",
+              "lastEditedTime": "={{ $now.plus(1, 'minutes').toISO() }}"
+            },
+            {
+              "key": "Review Date|date",
+              "condition": "is_empty"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "69b41f5b-5865-49b8-a52f-ab792fbdabb3",
+      "name": "Get updated pages",
+      "type": "n8n-nodes-base.notion",
+      "position": [
+        -4400,
+        3710
+      ],
+      "typeVersion": 2.2,
+      "credentials": {
+        "notionApi": {
+          "id": "n3j1Es9nW3F0S6LY",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "ff2d43c3-5d2f-4a04-93fc-caf762436b6e",
+              "leftValue": "={{ $json.results }}",
+              "rightValue": "",
+              "operator": {
+                "type": "array",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -1164,
+        3560
+      ],
+      "id": "917deca6-c1b3-4962-b685-91e422b9ad65",
+      "name": "If1"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -724,
+        3585
+      ],
+      "id": "c3e33558-7b66-44c6-94c2-559b0ec87092",
+      "name": "Loop Over Items2"
+    },
+    {
+      "parameters": {
+        "amount": 0.5
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        -504,
+        3585
+      ],
+      "id": "9a335401-60e9-46bc-9e53-0727c4ef2df4",
+      "name": "Wait",
+      "webhookId": "6ce8bec8-3c22-45a9-bdb6-64558c2c4ef3"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "results",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -944,
+        3585
+      ],
+      "id": "933c9b13-2b7a-488a-970f-e0131ff739c3",
+      "name": "Split Out2"
+    },
+    {
+      "parameters": {
+        "url": "=https://api.notion.com/v1/blocks/{{ $('Edit Fields7').item.json.notionPageId }}/children",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer ntn_X5744579398BM6yw1C5X70UcG9SjSDQCnSyG9FmPEsq5n1"
+            },
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1384,
+        3560
+      ],
+      "id": "0f2382a6-8fdd-40b8-b6e8-44e485e269a1",
+      "name": "HTTP Request7",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "V0hqFbxf1fb6XMu0",
+          "name": "Notoin Bearer Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "video",
+        "operation": "get",
+        "videoId": "={{ $json.videoId }}",
+        "options": {}
+      },
+      "id": "5b10ebf3-6133-4f6e-b4c9-2e361f02834e",
+      "name": "Get YouTube Video3",
+      "type": "n8n-nodes-base.youTube",
+      "position": [
+        -3740,
+        3710
+      ],
+      "typeVersion": 1,
+      "credentials": {
+        "youTubeOAuth2Api": {
+          "id": "IzfPbc1FydRwf5Ml",
+          "name": "YouTube account"
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "590168b5-1369-4476-abbb-52c56713dfa2",
+              "name": "data",
+              "value": "={{$json[\"data\"].removeTags().replace(/\\s+/g, ' ').trim()}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2860,
+        3710
+      ],
+      "id": "66b3d637-fae8-48d2-be8f-37ab5435f77b",
+      "name": "Edit Fields5"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "859db21a-cf0f-4a18-8d9b-6aeb89c0bbae",
+              "leftValue": "={{ $json.property_updated }}",
+              "rightValue": "={{ $json.property_created }}",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [
+        -4620,
+        3000
+      ],
+      "id": "438f0d90-fd3c-4ea5-9f5c-732a4e4c648d",
+      "name": "Filter",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "949067b8-211f-4865-a7eb-88ddf2b4529a",
+              "name": "url",
+              "value": "={{ $json.property_url }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -4180,
+        3710
+      ],
+      "id": "4a9071e3-ad8d-46db-8d86-dc48442fd50c",
+      "name": "Edit Fields6"
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.transcriptUrl }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "={{ $('Extract Video ID2').item.json.headers[\"User-Agent\"] }}"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "={{ $('Extract Video ID2').item.json.headers[\"Accept-Language\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "bd516dd3-76d2-4525-9aa0-876ea8f05cc8",
+      "name": "Fetch Transcript2",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -3080,
+        3710
+      ],
+      "retryOnFail": false,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "// for (const item of items) {\n//   const html = item.json.data;\n//   const targetLang = item.json.language || 'en';  // Default to English\n  \n//   // Extract the transcript data\n//   const transcriptMatch = html.match(/\"captionTracks\":\\[(.*?)\\]/);\n//   if (!transcriptMatch) {\n//     item.json = { error: 'No transcript data found' };\n//     continue;\n//   }\n\n//   // Parse the caption tracks\n//   const captionTracks = JSON.parse(`[${transcriptMatch[1]}]`);\n  \n//   // Look for the requested language\n//   const targetTrack = captionTracks.find(track => \n//     track.languageCode === targetLang || \n//     track.vssId?.includes(`.${targetLang}`)\n//   );\n\n//   if (!targetTrack) {\n//     // If target language not found, try auto-generated version\n//     const autoTrack = captionTracks.find(track => \n//       track.kind === \"asr\" && \n//       (track.languageCode === targetLang || track.vssId?.includes(`.${targetLang}`))\n//     );\n    \n//     if (!autoTrack) {\n//       item.json = { \n//         error: `No ${targetLang} transcript found (neither manual nor auto-generated)`,\n//         availableLanguages: captionTracks.map(track => ({\n//           code: track.languageCode,\n//           kind: track.kind,\n//           name: track.name?.simpleText\n//         }))\n//       };\n//       continue;\n//     }\n    \n//     item.json.transcriptUrl = autoTrack.baseUrl;\n//   } else {\n//     item.json.transcriptUrl = targetTrack.baseUrl;\n//   }\n// }\n\n// return items;\n\nfor (const item of items) {\n  const html = item.json.data;\n  const targetLang = item.json.language || 'en'; // Default to English\n\n  // Extract the transcript data\n  const transcriptMatch = html.match(/\"captionTracks\":\\[(.*?)\\]/);\n  if (!transcriptMatch) {\n    item.json = { error: 'No transcript data found' };\n    continue;\n  }\n\n  // Parse the caption tracks\n  const captionTracks = JSON.parse(`[${transcriptMatch[1]}]`);\n\n  // Function to find a transcript by language\n  const findTranscriptByLanguage = (lang) => {\n    return captionTracks.find(track => \n      track.languageCode === lang || \n      track.vssId?.includes(`.${lang}`)\n    );\n  };\n\n  // Attempt to find the target language transcript\n  let transcript = findTranscriptByLanguage(targetLang);\n\n  // If not found, try auto-generated version\n  if (!transcript) {\n    transcript = captionTracks.find(track => \n      track.kind === \"asr\" && \n      (track.languageCode === targetLang || track.vssId?.includes(`.${targetLang}`))\n    );\n  }\n\n  // If still not found, iterate through all available languages\n  if (!transcript) {\n    for (const track of captionTracks) {\n      transcript = findTranscriptByLanguage(track.languageCode);\n      if (transcript) break;\n    }\n  }\n\n  // Handle the result\n  if (transcript) {\n    item.json.transcriptUrl = transcript.baseUrl;\n    item.json.languageUsed = transcript.languageCode;\n  } else {\n    item.json = { \n      error: `No transcript found for ${targetLang} or other available languages.`,\n      availableLanguages: captionTracks.map(track => ({\n        code: track.languageCode,\n        kind: track.kind,\n        name: track.name?.simpleText\n      }))\n    };\n  }\n}\n\nreturn items;\n"
+      },
+      "id": "758786b8-6ee8-49b7-b53a-31e12bc4ab06",
+      "name": "Extract Transcript URL2",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -3300,
+        3710
+      ],
+      "retryOnFail": false,
+      "maxTries": 2,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "url": "={{ $('Extract Video ID2').item.json.pageUrl }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "={{ $('Extract Video ID2').item.json.headers['User-Agent'] }}"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "={{ $('Extract Video ID2').item.json.headers['Accept-Language'] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "1b21ea0d-cd65-4319-ac38-6e46b5d66501",
+      "name": "Fetch YouTube Page2",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -3520,
+        3710
+      ],
+      "notesInFlow": false,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "function getVideoId(url) {\n  // Handle youtu.be format\n  if (url.includes('youtu.be/')) {\n    const id = url.split('youtu.be/')[1].split('?')[0];\n    return id;\n  }\n  \n  // Handle youtube.com format\n  if (url.includes('youtube.com/watch')) {\n    const matches = url.match(/[?&]v=([^&#]+)/);\n    return matches ? matches[1] : null;\n  }\n  \n  return null;\n}\n\nasync function processSingle(item, index) {\n  const url = item?.json?.url || item?.url;\n  const lang = item?.json?.language || 'ko'; // Default to Korean if not specified\n  \n  if (!url) {\n    return {\n      json: {\n        error: `No URL found in item ${index}`,\n        inputReceived: JSON.stringify(item)\n      }\n    };\n  }\n\n  try {\n    const videoId = getVideoId(url);\n    if (!videoId) {\n      return {\n        json: {\n          error: 'Could not extract video ID from URL',\n          url: url\n        }\n      };\n    }\n\n    return {\n      json: {\n        videoId,\n        language: lang,\n        pageUrl: `https://www.youtube.com/watch?v=${videoId}`,\n        headers: {\n          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',\n          'Accept-Language': `${lang},en-US;q=0.9`  // Prioritize the requested language\n        }\n      }\n    };\n  } catch (error) {\n    return {\n      json: {\n        error: error.message,\n        errorDetail: error.toString(),\n        url,\n        inputItem: JSON.stringify(item)\n      }\n    };\n  }\n}\n\n// Process all items\nconst results = await Promise.all(items.map(processSingle));\nreturn results;"
+      },
+      "id": "08ee5a49-af6d-4703-ae1b-d7a5e7e23fbb",
+      "name": "Extract Video ID2",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -3960,
+        3710
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5bb278f5-7a5b-4ef2-872f-1e2a4d169749",
+              "name": "notionPageId",
+              "value": "={{ $json.id }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1824,
+        3560
+      ],
+      "id": "5c548a57-e67d-49f4-a30c-938ea4838965",
+      "name": "Edit Fields7"
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "update",
+        "pageId": {
+          "__rl": true,
+          "value": "={{ $('Get updated pages').item.json.url }}",
+          "mode": "url"
+        },
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "Title|title",
+              "title": "={{ $('Get YouTube Video3').item.json.snippet.title }}"
+            },
+            {
+              "key": "Image|files",
+              "fileUrls": {
+                "fileUrl": [
+                  {
+                    "name": "thumbnail",
+                    "url": "={{ $('Get YouTube Video3').item.json.snippet.thumbnails.medium.url }}"
+                  }
+                ]
+              }
+            },
+            {
+              "key": "Area/Resource|relation",
+              "relationValue": [
+                "1da15667-5346-80b0-a8b1-fb1256aa30c4"
+              ]
+            },
+            {
+              "key": "Type|select",
+              "selectValue": "Youtube"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        -2044,
+        3560
+      ],
+      "id": "9c7ae5de-ae77-4e16-b43b-532d6f0bd973",
+      "name": "Notion2",
+      "credentials": {
+        "notionApi": {
+          "id": "n3j1Es9nW3F0S6LY",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "inputMarkdown": "={{ $('Basic LLM Chain1').first().json.text }}"
+      },
+      "type": "n8n-nodes-notion-markdown.notionMarkdown",
+      "typeVersion": 1,
+      "position": [
+        -504,
+        3360
+      ],
+      "id": "a19140fa-43ec-4625-a3f9-0d7393db3c88",
+      "name": "Notion Markdown1"
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "=https://api.notion.com/v1/pages/{{ $('Edit Fields7').item.json.notionPageId }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer ntn_X5744579398BM6yw1C5X70UcG9SjSDQCnSyG9FmPEsq5n1"
+            },
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"cover\": {\n    \"type\": \"external\",\n    \"external\": {\n      \"url\": \"{{ $('Notion2').item.json.property_image[0] }}\"\n    }\n  }\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1604,
+        3560
+      ],
+      "id": "480d3d19-8e48-4e5c-911f-ce67bcd8102a",
+      "name": "HTTP Request8",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "V0hqFbxf1fb6XMu0",
+          "name": "Notoin Bearer Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "=https://api.notion.com/v1/blocks/{{ $('Edit Fields7').first().json.notionPageId }}/children",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer ntn_X5744579398BM6yw1C5X70UcG9SjSDQCnSyG9FmPEsq5n1"
+            },
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $json }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        596,
+        3260
+      ],
+      "id": "1b8c3eb7-5656-4634-814d-6476d5443167",
+      "name": "HTTP Request9",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "V0hqFbxf1fb6XMu0",
+          "name": "Notoin Bearer Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "=https://api.notion.com/v1/blocks/{{ $json.id }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer ntn_X5744579398BM6yw1C5X70UcG9SjSDQCnSyG9FmPEsq5n1"
+            },
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"archived\": true\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -284,
+        3660
+      ],
+      "id": "078f6e92-646c-4bb6-bd61-967355d58b4f",
+      "name": "HTTP Request10",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "V0hqFbxf1fb6XMu0",
+          "name": "Notoin Bearer Auth account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "options": {
+          "reset": "={{ $node[\"Loop Over Items3\"].context[\"done\"] }}"
+        }
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -64,
+        3360
+      ],
+      "id": "ce458bd1-b432-4bf6-8035-2c7153157ee5",
+      "name": "Loop Over Items3"
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "=https://api.notion.com/v1/blocks/{{ $('Notion2').first().json.id }}/children",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer ntn_X5744579398BM6yw1C5X70UcG9SjSDQCnSyG9FmPEsq5n1"
+            },
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $json }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        376,
+        3535
+      ],
+      "id": "f138d806-c03a-4e6f-a9c1-b034f424d471",
+      "name": "HTTP Request11",
+      "executeOnce": false,
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "V0hqFbxf1fb6XMu0",
+          "name": "Notoin Bearer Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -2640,
+        3710
+      ],
+      "id": "c17269fb-8b86-4165-b8ad-45e3c0aa1aca",
+      "name": "Loop Over Items5"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 1
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -4620,
+        2740
+      ],
+      "id": "f6cf075c-e9ae-4f28-9ebc-8bfaa51504f4",
+      "name": "Schedule Trigger1"
+    },
+    {
+      "parameters": {
+        "formTitle": "플레이 리스트 아이디 입력",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "playListId"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.2,
+      "position": [
+        -4620,
+        2480
+      ],
+      "id": "db120df1-e0fb-4483-a9c3-4cab02c3d883",
+      "name": "On form submission",
+      "webhookId": "77beb611-5968-4d0e-a894-511b020a75dc",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "update",
+        "pageId": {
+          "__rl": true,
+          "value": "={{ $('Notion2').last().json.url }}",
+          "mode": "url"
+        },
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "Review Date|date",
+              "date": "={{ $now}}",
+              "timezone": "Asia/Seoul"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        816,
+        3610
+      ],
+      "id": "d1c4122c-e956-4fc9-85d5-4e6974b43875",
+      "name": "Notion4",
+      "credentials": {
+        "notionApi": {
+          "id": "n3j1Es9nW3F0S6LY",
+          "name": "Notion account"
+        }
+      },
+      "onError": "continueErrorOutput"
+    }
+  ],
+  "pinData": {
+    "Schedule Trigger": [
+      {
+        "json": {
+          "timestamp": "2025-01-13T07:11:35.005-05:00",
+          "Readable date": "January 13th 2025, 7:11:35 am",
+          "Readable time": "7:11:35 am",
+          "Day of week": "Monday",
+          "Year": "2025",
+          "Month": "January",
+          "Day of month": "13",
+          "Hour": "07",
+          "Minute": "11",
+          "Second": "35",
+          "Timezone": "America/New_York (UTC-05:00)"
+        }
+      }
+    ]
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": {
+    "node:Notion Trigger": {
+      "lastTimeChecked": "2025-04-18T07:02:00.000Z"
+    },
+    "node:Schedule Trigger": {
+      "recurrenceRules": []
+    }
+  },
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2025-04-21T05:37:14.412Z",
+  "versionId": "09b5f7ae-dc63-4e91-80c1-45039854d8cb"
+}
